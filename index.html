@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Enjoy your Thanksgiving this Year!</h1>
+</head>
+<body>
+   
+    <h1 class = "greeting"></h1>
+
+
+    <p class="fullMeal">Start your meal with honeydew melon, a glass of moscato. Help yourself to Turkey or Stuffed green peppers, with Radacchio,
+        French beans and Creamed mashed potatoes. Have a side! Plenty of garlic bread rolls and Macaroni and Cheese. Finish your meal
+        with a sweet - pumpkin-vanilla ice cream, frosted pumpkin pie</p>
+
+
+    <p class="priceInfo">Seniors get a 10% discount, the total cost for your Thanksgiving meal? Adults: $25,
+        Seniors: $22.50.</p>
+
+
+    <p class = "calorieInfo">Worried about calories? Total damage is 930 (starter: 180, entree: 450, dessert: 300)</p>
+  
+   <script>
+    const thanksgivingMeal = {
+    starter: {
+        fruit: "honeydew melon",
+        wine: "moscato",
+        calories: 180
+    },
+    entree: {
+        meat: "Turkey",
+        alt: "Stuffed green peppers",
+        vegetables: {
+            potatoes: "Creamed mashed potatoes",
+            greens: "French beans",
+            salad: "Radacchio"
+        },
+        sides: {
+            bread: "garlic bread rolls",
+            pasta: "Macaroni and Cheese"
+        },
+        calories: 450
+    },
+    dessert: {
+        ice_cream: "pumpkin-vanilla",
+        cake: "frosted pumpkin pie",
+        calories: 300
+    },
+    total_cost: 25.0,
+    senior_discount: .10,
+    prettyPrint: function () {
+        // Collate the menu here
+        // display the content of the starter, the entree and the dessert
+        let menuStr = document.querySelector(".fullMeal")
+        return(this.starter.fruit + wine) 
+    },
+
+    totalPrice(isSenior) {
+        // display the total price, given indicator isSenior - true or false
+        if (isSenior == .10)
+        return true;
+        else {
+            false;
+        }
+    },
+
+    totalCalories : function() {
+        // Add the total calories
+        return (this.starter.calories + this.entree.calories + this.dessert.calories);   
+     },
+
+    caloriesFrom: function(indicator) {
+        // get the total calories for the indicator
+        // 1 - starter, 2 - entree, 3 - dessert
+        return(starter.calories, entree.calories, dessert.calories);
+    }   
+
+};
+    console.log(thanksgivingMeal);
+    document.querySelector("p.fullMeal");
+    document.querySelector("p.priceInfo");
+    document.querySelector("p.calorieInfo");
+    
+  </script>
+</body>
+</html>
